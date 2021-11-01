@@ -1,0 +1,139 @@
+.gallery {
+	padding: 0px 0px 120px 0px;
+	transform: translate(0px, 100px);
+	opacity: 0;
+	transition: all 0.3s ease 0s;
+
+	&._active {
+		transform: translate(0px, 0px);
+		opacity: 1;
+	}
+
+	// .gallery__contauner
+	&__contauner {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		@media (max-width:$md2+px) {
+			flex-direction: column;
+		}
+	}
+
+	// .gallery__popular-products
+	&__popular-products {
+		flex: 0 1 48.7%;
+		width: 100%;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+		max-width: 555px;
+
+		@media (max-width:$md2+px) {
+			max-width: none;
+			width: 95%;
+			margin: 0px 0px 30px 0px;
+		}
+	}
+
+	&__photo {
+		margin: -15px -15px;
+		display: flex;
+		flex-wrap: wrap;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+
+
+	}
+
+	// .gallery__column
+	&__column {
+		padding: 15px 15px;
+		flex: 1 1 25%;
+		max-width: 146.25px;
+		max-height: 136.94px;
+
+	}
+
+	// .gallery__item
+	&__item {
+		padding: 0px 0px 92% 0px;
+		width: 100%;
+		box-shadow: 0px 0px 10px black;
+		border-radius: 15px;
+		overflow: hidden;
+		transition: all 0.3s ease 0s;
+
+		&:hover {
+			box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.383);
+		}
+
+		&:active {
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.383);
+		}
+
+		img {
+			cursor: pointer;
+			opacity: 0.4;
+			transition: all 0.3s ease 0s;
+
+			&:hover {
+				opacity: 1;
+
+			}
+		}
+	}
+
+	// .gallery__text
+	&__text {}
+
+	// .gallery__title
+	&__title {
+		font-family: Poppins;
+		font-weight: 500;
+		font-size: 32.25px;
+		line-height: 140%;
+		text-align: center;
+		color: #170C04;
+		margin: 0px 0px 12px 0px;
+
+		@media (max-width:$md4+px) {
+			font-size: 28px;
+		}
+	}
+
+	// .gallery__subtitle
+	&__subtitle {
+		font-family: Roboto;
+		font-size: 16px;
+		line-height: 150%;
+		text-align: center;
+		color: #170c048c;
+		margin: 0px 0px 26px 0px;
+	}
+
+
+	&__img-big {
+		padding: 0px 0px 92% 0px;
+		width: 100%;
+		box-shadow: 0px 0px 10px black;
+		border-radius: 15px;
+		overflow: hidden;
+	}
+
+	// .gallery__preview
+	&__preview {
+		flex: 0 1 48.7%;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 50px 0px 0px 0px;
+
+		@media (max-width:$md3+px) {
+			padding: 20px 0px 0px 0px;
+		}
+	}
+}

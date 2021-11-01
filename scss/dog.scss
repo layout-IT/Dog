@@ -1,0 +1,140 @@
+.best {
+	margin: 131px 0px 120px 0px;
+	transform: translate(0px,100px);
+	opacity: 0;
+	transition: all 0.3s ease 0s;
+	&._active{
+		transform: translate(0px, 0px);
+		opacity: 1;
+	}
+	@media (max-width:$md4+px){
+		  margin: 100px 0px 120px 0px;
+	}
+	// .best__container
+	&__container {
+		
+	}
+
+	// .best__items
+	&__items {
+		display: flex;
+		margin: 0 -15px;
+		flex-wrap: wrap;
+		@media (max-width:$md2+px){
+			margin: -15px -15px;
+		}
+	
+	}
+
+	// .best__column
+	&__column {
+		display: flex;
+		flex: 0 1 33.333%;
+		padding: 0 15px;
+		@media (max-width:$md2+px){
+			flex: 0 1 50%;
+			padding: 15px 15px;
+		}
+		@media (max-width:$md3+px){
+			  	flex: 0 1 100%;
+			  	padding: 0;
+				   justify-content: center;
+				   align-items: center;
+		}
+		
+	}
+
+	&__btn{
+		background-color: white;
+		font-family: Roboto;
+		font-size: 16px;
+		line-height: 150%;
+		color: #E27B3A;
+	}
+
+	// .best__item
+	&__item {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			border: 1px solid rgba(0, 0, 0, 0.1);
+			box-sizing: border-box;
+			border-radius: 8px;
+			transition: all 0.3s ease 0s;
+			cursor: pointer;
+			padding: 40px 25px 18px 25px;
+			&:hover{
+				box-shadow: 1px 2px 10px  #ebd1bd;
+			}
+			@media (max-width:$md3+px){
+				padding: 40px 0px 18px 0px;
+				width: 95%;
+			}
+	}
+
+	// .best__image
+	&__image {}
+
+	// .best__back
+	&__back {
+		background: url("../img/best/Vector1.svg")no-repeat;
+		max-width: 63px;
+		height: 54px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: -25px 0px 0px 0px;
+
+	
+		img{
+			max-width: 36px;
+			max-height: 36px;
+		}
+	}
+
+	// .best__title
+	&__title {
+		font-family: Poppins;
+		font-size: 25px;
+		line-height: 37px;
+		text-align: center;
+		color: #170C04;
+		margin: 0px 0px 11px 0px;
+	}
+
+	// .best__subtitle
+	&__subtitle {
+		font-family: Roboto;
+		font-size: 16px;
+		line-height: 150%;
+		text-align: center;
+		color: #170c04af;
+		margin: 0px 0px 24px 0px;
+	}
+}
+
+
+._green{
+		background: url("../img/best/Vector2.svg")no-repeat;
+		max-width: 63px;
+		height: 54px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: -25px 0px 0px 0px;
+}
+
+._yellow {
+		background: url("../img/best/Vector3.svg")no-repeat;
+		max-width: 63px;
+		height: 54px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: -25px 0px 0px 0px;
+}
+
